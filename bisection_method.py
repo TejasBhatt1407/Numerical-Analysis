@@ -1,11 +1,5 @@
-# ============================================
-# Bisection Method - Root Finding
-# ============================================
-# The bisection method finds a root of f(x) = 0
-# in the interval [a, b] where f(a) and f(b) have opposite signs.
-
 def f(x):
-    return x**3 - x - 2  # Change this function as needed
+    return x**3 - x - 2  
 
 def bisection(a, b, tol=1e-6, max_iter=100):
     if f(a) * f(b) >= 0:
